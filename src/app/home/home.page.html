@@ -1,0 +1,26 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title class="ion-text-center">
+      Coscous ML
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div id="container">
+    <div>
+      <img [src]="labelImage" width="90px">
+      <p>{{label}}</p>
+      <p>==========================</p>
+    </div>
+    <div>
+      <img [src]="image" width="70%" id="pic">
+    </div>
+    <p>
+      <ion-button shape="round" class="btn" (click)="openPhoto()" color="success">Choisir une image depuis le Galerie</ion-button>
+    </p>
+    <p>
+      <ion-button shape="round" class="btn" (click)="firstTry()" color="danger" *ngIf="imageHTML !=null">Prédire</ion-button>
+    </p>
+  </div>
+</ion-content>

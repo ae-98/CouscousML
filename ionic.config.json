@@ -1,0 +1,7 @@
+{
+  "name": "coscousML",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
